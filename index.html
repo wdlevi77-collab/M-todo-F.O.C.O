@@ -44,7 +44,7 @@ src="https://www.facebook.com/tr?id=1661988754941856&ev=PageView&noscript=1"/></
   .center{text-align:center}
 
   /* top bar */
-  .topbar{background:var(--indigo-dark);color:#fff;text-align:center;padding:10px 16px;font-size:13.5px;font-weight:600;letter-spacing:.3px}
+  .topbar{background:#C81E4E;color:#fff;text-align:center;padding:14px 16px;font-size:15.5px;font-weight:800;letter-spacing:.3px}
   .topbar b{color:var(--yellow)}
 
   /* hero */
@@ -54,7 +54,7 @@ src="https://www.facebook.com/tr?id=1661988754941856&ev=PageView&noscript=1"/></
   .hero .bl2{width:220px;height:220px;background:var(--teal);bottom:-90px;left:-80px;opacity:.25}
   .hero .content{position:relative;z-index:2}
   .eyebrow{display:inline-block;background:rgba(255,255,255,.14);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:8px 16px;border-radius:100px;margin-bottom:22px}
-  .hero h1{font-size:40px;color:#fff;margin-bottom:20px}
+  .hero h1{font-size:33px;color:#fff;margin-bottom:18px;line-height:1.12}
   .hero h1 .u{text-decoration:underline;text-decoration-color:var(--yellow);text-underline-offset:5px;text-decoration-thickness:4px}
   .hero .sub{font-size:19px;color:rgba(255,255,255,.9);max-width:620px;margin:0 auto 30px;font-weight:400}
   .hero .sub b{color:#fff}
@@ -69,8 +69,8 @@ src="https://www.facebook.com/tr?id=1661988754941856&ev=PageView&noscript=1"/></
   .video-note .live{display:inline-block;width:8px;height:8px;background:#ff4d4d;border-radius:50%;margin-right:6px;vertical-align:middle}
 
   /* buttons */
-  .cta{display:inline-block;background:var(--coral);color:#fff;font-size:20px;font-weight:800;text-decoration:none;padding:20px 40px;border-radius:100px;box-shadow:0 10px 0 var(--coral-d),0 18px 30px rgba(237,83,70,.35);transition:transform .12s,box-shadow .12s;letter-spacing:.3px;text-align:center;max-width:520px;width:100%}
-  .cta:hover{transform:translateY(3px);box-shadow:0 7px 0 var(--coral-d),0 12px 22px rgba(237,83,70,.35)}
+  .cta{display:inline-block;background:var(--coral);color:#fff;font-size:18px;font-weight:800;text-decoration:none;padding:16px 26px;border-radius:14px;box-shadow:0 5px 0 var(--coral-d),0 10px 22px rgba(237,83,70,.45);transition:box-shadow .12s;letter-spacing:.3px;text-align:center;max-width:440px;width:100%;animation:ctaPulse 1.8s ease-in-out infinite}@keyframes ctaPulse{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  .cta:hover{animation:none;box-shadow:0 3px 0 var(--coral-d),0 8px 16px rgba(237,83,70,.4)}
   .cta small{display:block;font-size:13px;font-weight:600;opacity:.9;margin-top:4px;letter-spacing:.2px}
   .cta-hint{font-size:14px;color:var(--ink-soft);margin-top:14px}
   .cta-reveal{opacity:0;max-height:0;overflow:hidden;transition:opacity .6s ease,max-height .6s ease}
@@ -186,6 +186,14 @@ src="https://www.facebook.com/tr?id=1661988754941856&ev=PageView&noscript=1"/></
 @media(max-width:560px){.reviews{grid-template-columns:1fr}}
 </style>
 <style>.cover-hero{display:block;margin:26px auto 8px;width:100%;max-width:430px;border-radius:16px;box-shadow:0 26px 60px rgba(15,8,50,.5)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
+<style>
+.incl li{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.incl li > span:first-child{flex:1}
+.ip{color:#B4AFCB;text-decoration:line-through;font-weight:700;font-size:14px;white-space:nowrap}
+.value-total{text-align:center;font-size:16px;color:var(--ink-soft);margin:16px 0 4px}
+.value-total s{color:#C81E4E;font-weight:800}
+</style>
+<style>@media(max-width:560px){.hero h1{font-size:26px}.topbar{font-size:14px}}</style>
 <div class="topbar">Oferta especial de lançamento — <b>por tempo limitado</b></div>
 
 <header class="hero">
@@ -193,7 +201,7 @@ src="https://www.facebook.com/tr?id=1661988754941856&ev=PageView&noscript=1"/></
   <div class="wrap content" style="position:relative;z-index:2">
     <div class="center">
       <span class="eyebrow">Para pais de crianças de 7 a 14 anos</span>
-      <h1>Faça seu filho <span class="u">estudar sozinho</span> em 15 minutos por dia — sem briga, sem implorar e sem professor particular</h1>
+      <h1>Seu filho vai <span class="u">estudar sozinho</span> em 15 minutos por dia</h1>
       <p class="sub">O guia prático que transforma a lição de casa de guerra em rotina <b>em apenas 7 dias</b>, mesmo que hoje seu filho odeie estudar.</p>
     </div>
     <div class="center">
@@ -417,17 +425,15 @@ src="https://www.facebook.com/tr?id=1661988754941856&ev=PageView&noscript=1"/></
       <div class="tagline">Condição especial de lançamento</div>
       <h3>Guia completo Estudo em 15 Minutos</h3>
       <ul class="incl">
-        <li>Ebook completo com o Método F.O.C.O. (25 páginas)</li>
-        <li>Passo a passo dos 7 dias para aplicar hoje mesmo</li>
-        <li>As 3 técnicas de memória + guia por matéria</li>
-        <li>Checklist e Contrato dos 15 Minutos para imprimir</li>
-        <li>Capítulo "Quando dá errado" com as soluções</li>
-        <li>Acesso digital imediato e vitalício</li>
+        <li><span>Ebook completo com o Método F.O.C.O. (25 páginas)</span><span class="ip">R$ 87</span></li>
+        <li><span>Passo a passo dos 7 dias para aplicar hoje</span><span class="ip">R$ 27</span></li>
+        <li><span>As 3 técnicas de memória + guia por matéria</span><span class="ip">R$ 40</span></li>
+        <li><span>Checklist e Contrato dos 15 Minutos</span><span class="ip">R$ 30</span></li>
+        <li><span>Capítulo "Quando dá errado" com as soluções</span><span class="ip">R$ 18</span></li>
+        <li><span>Acesso digital imediato e vitalício</span><span class="ip">R$ 25</span></li>
       </ul>
-      <div class="price">
-        <span class="strike">De R$ 197</span><br>
-        <span class="now"><small>R$</small>47</span>
-      </div>
+      <div class="value-total">Somando tudo dá <s>R$ 227</s>. Hoje, tudo por:</div>
+      <div class="price"><span class="now"><small>R$</small>47</span></div>
       <p class="price-sub">Pagamento único · <b>menos que uma pizza</b> para resolver o que te tira o sono</p>
       <a href="https://pay.cakto.com.br/uw7roo7_967087" target="_blank" rel="noopener" class="cta" onclick="fbq('track','InitiateCheckout',{value:47.00,currency:'BRL'})">QUERO O MÉTODO POR R$47<small>Acesso imediato · pagamento 100% seguro</small></a>
       <p class="cta-hint">Compra segura · Garantia incondicional de 7 dias</p>
